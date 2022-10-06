@@ -1,0 +1,390 @@
+body::-webkit-scrollbar {
+    width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid darkslategrey;
+}
+
+nav .dark {
+    color: antiquewhite;
+}
+
+nav .light {
+    cursor: pointer;
+    color: rgb(26, 25, 25)!important;
+    font-weight: 650;
+}
+
+
+/* nav .icofont-ui-brightness {
+    font-size: 1rem;
+    color: black;
+} */
+
+
+/* .navbar a {
+    display: inline-block;
+
+position: relative;
+transition: 0.3s;
+font-size: 1.5rem;
+
+padding: 2.1rem .3rem;
+
+font-weight: 800;
+font-family: "Raleway",
+sans-serif;
+
+}
+.togglemode {
+    background: none;
+    font-size: 2.5rem;
+    margin: 0;
+    transition: all 0.5s linear;
+}
+.togglemode:hover {
+    transform: rotate(360deg);
+    color: #dd0e61;
+}
+*/
+
+.feedback {
+    padding: 2rem;
+}
+
+.container h3 {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid black;
+    letter-spacing: 0.5px;
+    padding: 0rem 1rem 0rem 1rem;
+    font-weight: 700;
+    /* background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    background-color: #CA4246;
+    /* Create the gradient. */
+    background-image: linear-gradient( 45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.container h3:hover {
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+
+/* Move the background and make it larger. */
+
+
+/* Animation shown when hovering over the text. */
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+.container .student-details {
+    max-width: 30rem;
+    max-height: 35rem;
+    border: 2px solid darkslategrey;
+    border-radius: 0.5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.container button {
+    margin: 0;
+    width: 8rem;
+    font-size: .9rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-width: 0.1rem;
+}
+
+.container .student-details input,
+label,
+select,
+option {
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .8px;
+    height: 3rem;
+    border-width: 0.1rem;
+}
+
+.container form .form-select {
+    border-width: 0.1rem;
+}
+
+
+/* Feedback section */
+
+.container .feedback-forms {
+    position: relative;
+    border: 2px solid darkslategrey;
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 1rem;
+    width: 58rem;
+    /* max-width: 60rem; */
+    min-width: 20rem;
+    overflow: hidden;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+    /*     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+    /*     box-shadow: -5px -5px 10px;*/
+    /*     box-shadow: inset 0 0 5px 5px olive; */
+    box-shadow: inset 0 0 6px #3d5afe;
+    box-shadow: 0 0 5px #3d5afe;
+}
+
+@media only screen and (max-width: 600px) {
+    .container .feedback-forms {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 486px) {
+    .container .feedback-forms {
+        width: 25rem;
+    }
+}
+
+.feedback-forms form {
+    width: 100%;
+    height: auto;
+    overflow: initial;
+    overflow-x: hidden;
+    margin: 1rem auto;
+}
+
+.feedback-forms .course-details {
+    position: relative;
+    width: 100%;
+    max-width: 56rem;
+    min-width: 19rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid darkslategrey;
+}
+
+.feedback-forms .course-details div {
+    position: relative;
+    width: 31%;
+    text-align: center;
+    /* width: 100%; */
+    /* max-width: 56rem; */
+    /* min-width: 19rem; */
+    /* height: auto; */
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.feedback-forms .heading {
+    width: 100%;
+    /* min-width: 100%; */
+    margin: auto 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-forms .heading h5:first-child {
+    width: 20% !important;
+}
+
+.feedback-forms .heading h5 {
+    width: 15%;
+    text-align: center;
+    max-width: 15rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.all-ratings {
+    width: 100%;
+}
+
+.feedback-forms form .ratings {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    border-bottom: 2px solid darkslategrey;
+    box-shadow: 5px 5px 5px 5px solid #000;
+}
+
+.feedback-forms form .ratings .title {
+    width: 20% !important;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: scroll;
+    /* min-width: 10rem; */
+    /* display: flex; */
+    /* padding: 0rem 1rem 0rem 1rem; */
+    /* justify-content: left; */
+}
+
+.feedback-forms form .ratings .title span {
+    color: red;
+}
+
+.feedback-forms form .ratings .title::-webkit-scrollbar {
+    display: none;
+}
+
+.feedback-forms form .ratings .rating {
+    width: 15%;
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    /* vertical-align: middle; */
+}
+
+.feedback-forms form .ratings .form-check-input {
+    border-color: darkslategrey;
+    margin: 0rem auto;
+}
+
+.feedback-forms form .navigateBtn {
+    width: 100%;
+}
+
+.feedback-forms form .prev {
+    float: left;
+}
+
+.feedback-forms form .next,
+.submitForm {
+    float: right;
+}
+
+.feedback-forms form .pageNumber {
+    margin: auto;
+    width: 5rem;
+    font-weight: 600;
+}
+
+.errorPage {
+    width: 100%;
+    margin: auto;
+}
+
+.errorPage .outer-box {
+    width: 40rem;
+    height: 15rem;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px solid #000;
+}
+
+.errorPage .inner-box {
+    width: 40rem;
+    height: 15rem;
+    margin: auto;
+    padding-top: 8rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    border-bottom: 3px solid #ff1744;
+    box-shadow: 0px 5px #ff1744;
+    border-top: none;
+    outline: none;
+}
+
+.errorPage .inner-box h1 {
+    width: fit-content;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 2px gray;
+}
+
+.errorPage .inner-box p {
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: darkslategrey;
+}
+
+.verifyEmail {
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.verifyEmail form {
+    width: 50%;
+    height: 20rem;
+    padding: 3rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    ;
+}
+
+.verifyEmail form h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: darkslategrey;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.verifyEmail form input {
+    border-color: darkslategray;
+    margin-bottom: 2rem;
+}
+
+.verifyEmail form button {
+    /* padding: .3rem 1rem; */
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
