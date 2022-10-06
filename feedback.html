@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Student feedback</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="light navbar-brand ">Home</a>
+            <!-- <a class="light navbar-brand ">Home</a> -->
+            <a><i class="icofont-ui-brightness"></i></a>
+        </div>
+    </nav>
+
+    <div class="verifyEmail">
+        <form method="post">
+            <h3>Verify email</h3>
+            <div class="form-floating mb-3">
+                <input type="email" name="email" pattern="[a-z0-9]{3,}@mitaoe.ac.in$" title="example@mitaoe.ac.in" class="form-control" id="floatingEmail" required>
+                <label for="floatingEmail">Email</label>
+                <button type="submit" aria-label="Next" class="emailVerification btn btn-outline-primary btn-sm mt-3">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <section class="errorPage mt-5" id="errorPage"></section>
+
+    <section class="feedback mt-5 d-none" id="feedback">
+        <div class="container forms d-flex flex-column align-items-center mb-3 mt-3">
+            <h3 class="">Student Feedback Form</h3>
+            <div class="student-info"></div>
+            <div class="feedback-forms container mt-3 d-none">
+                <!-- Rating forms will appear here... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
